@@ -45,7 +45,7 @@ function visualize(audioBuffer, audioContext) {
     analyser.getByteFrequencyData(frequencyData);
 
     for (let i = 0; i < frequencyBufferLength; i++) {
-      canvasContext.fillStyle = "rgb(" + frequencyData[i] + ",105,138)";
+      canvasContext.fillStyle = "rgb(" + frequencyData[i] + ",95,98)";
       canvasContext.fillRect(
         i * barWidth,
         canvas.height - frequencyData[i],
